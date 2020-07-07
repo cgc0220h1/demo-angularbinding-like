@@ -1,7 +1,7 @@
 <div>
   <p>{{post.title}}</p>
   <p>{{post.content}}</p>
-  <a (click)="onLikeClick()" href="javascript:void(0)">Like</a> {{post.likes}}
+  <app-like [post]="post"></app-like>
   <div style="padding-left: 20px">
     <app-comments [comments]="post.comments"></app-comments>
   </div>

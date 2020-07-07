@@ -6,6 +6,7 @@ import {PostsComponent} from './posts/posts.component';
 import {CommentComponent} from './comment/comment.component';
 import {PostComponent} from './post/post.component';
 import {CommentsComponent} from './comments/comments.component';
+import {LikeComponent} from './like/like.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import {CommentsComponent} from './comments/comments.component';
     PostsComponent,
     CommentComponent,
     PostComponent,
-    CommentsComponent
+    CommentsComponent,
+    LikeComponent
   ],
   imports: [
     BrowserModule

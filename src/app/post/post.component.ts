@@ -17,6 +17,6 @@ export class PostComponent implements OnInit {
   }
 
   onLikeClick(): void {
-    console.log('Thank you');
+    this.post.likes++;
   }
 }

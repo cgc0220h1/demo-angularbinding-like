@@ -1,7 +1,7 @@
 <div>
   <p>{{post.title}}</p>
   <p>{{post.content}}</p>
-  <app-like [post]="post"></app-like>
+  <app-like (likeClicked)="increamentLike()" [likes]="post.likes"></app-like>
   <div style="padding-left: 20px">
     <app-comments [comments]="post.comments"></app-comments>
   </div>

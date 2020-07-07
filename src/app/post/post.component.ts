@@ -15,4 +15,8 @@ export class PostComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  increamentLike(): void {
+    this.post.likes++;
+  }
 }

@@ -1,5 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {IPost} from '../ipost';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-like',
@@ -7,9 +6,11 @@ import {IPost} from '../ipost';
   styleUrls: ['./like.component.css']
 })
 export class LikeComponent implements OnInit {
-
   @Input()
-  post: IPost;
+  likes: number;
+
+  @Output()
+  likeClicked: EventEmitter<void> = new EventEmitter<void>();
 
   constructor() {
   }
@@ -18,6 +19,7 @@ export class LikeComponent implements OnInit {
   }
 
   onLikeClick(): void {
-    this.post.likes++;
+    /*this.post.likes++;*/
+    this.likeClicked.emit();
   }
 }

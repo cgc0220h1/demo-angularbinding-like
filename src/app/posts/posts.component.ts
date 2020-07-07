@@ -12,6 +12,7 @@ export class PostsComponent implements OnInit {
       id: 0,
       title: 'Hello World',
       content: 'Today is a good day',
+      likes: 10,
       comments: [
         {
           id: 0,
@@ -23,6 +24,7 @@ export class PostsComponent implements OnInit {
       id: 1,
       title: 'Hello World',
       content: 'Today is a good day',
+      likes: 20,
       comments: [
         {
           id: 1,

@@ -5,4 +5,5 @@ export interface IPost {
   title?: string;
   content?: string;
   comments?: IComment[];
+  likes: number;
 }

@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {IPost} from '../ipost';
 
 @Component({
   selector: 'app-posts',
@@ -6,16 +7,18 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./posts.component.css']
 })
 export class PostsComponent implements OnInit {
-  posts = [
+  posts: IPost[] = [
     {
       id: 0,
       title: 'Hello World',
-      content: 'Today is a good day'
+      content: 'Today is a good day',
+      comments: [1, 2, 3]
     },
     {
       id: 1,
       title: 'Hello World',
-      content: 'Today is a good day'
+      content: 'Today is a good day',
+      comments: [4, 5, 6]
     }
   ];
 

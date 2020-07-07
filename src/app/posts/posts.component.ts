@@ -12,13 +12,27 @@ export class PostsComponent implements OnInit {
       id: 0,
       title: 'Hello World',
       content: 'Today is a good day',
-      comments: [1, 2, 3]
+      comments: [
+        {
+          id: 0,
+          content: 'Xin chao ban'
+        }
+      ]
     },
     {
       id: 1,
       title: 'Hello World',
       content: 'Today is a good day',
-      comments: [4, 5, 6]
+      comments: [
+        {
+          id: 1,
+          content: 'Xin chao cau'
+        },
+        {
+          id: 2,
+          content: 'Xin chao'
+        }
+      ]
     }
   ];
 

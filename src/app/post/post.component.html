@@ -1,3 +1,8 @@
-<p>{{post.title}}</p>
-<p>{{post.content}}</p>
-<hr>
+<div>
+  <p>{{post.title}}</p>
+  <p>{{post.content}}</p>
+  <div style="padding-left: 20px">
+    <app-comments [comments]="post.comments"></app-comments>
+  </div>
+  <hr>
+</div>
